@@ -2,529 +2,560 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>2026 America Innovation Invention Exhibition | Official Website</title>
 
-   <!-- google font -->
+   <!-- primary meta -->
+   <title>2026 America Innovation Invention Exhibition (AIIE) | San Diego</title>
+   <meta name="description" content="AIIE 2026, hosted by WIIPA, runs August 14-15, 2026 in San Diego, California. Inventors of every age and background are welcome to exhibit, compete and win international awards.">
+   <link rel="canonical" href="https://wiipa.aiie.us/">
+   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+   <meta name="author" content="World Invention Intellectual Property Associations (WIIPA)">
+   <meta name="theme-color" content="#6600CC">
+
+   <!-- favicon -->
+   <link rel="icon" href="assets/images/logo/logo.png" type="image/png">
+   <link rel="apple-touch-icon" href="assets/images/logo/logo.png">
+
+   <!-- open graph -->
+   <meta property="og:type" content="website">
+   <meta property="og:site_name" content="America Innovation Invention Exhibition (AIIE)">
+   <meta property="og:title" content="2026 America Innovation Invention Exhibition (AIIE) | San Diego">
+   <meta property="og:description" content="AIIE 2026, hosted by WIIPA, runs August 14-15, 2026 in San Diego, California. Inventors of every age and background are welcome to exhibit, compete and win international awards.">
+   <meta property="og:url" content="https://wiipa.aiie.us/">
+   <meta property="og:image" content="https://wiipa.aiie.us/assets/images/banner-slider/1.jpg">
+   <meta property="og:image:alt" content="Inventors and exhibitors at the America Innovation Invention Exhibition">
+   <meta property="og:locale" content="en_US">
+
+   <!-- twitter -->
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:title" content="2026 America Innovation Invention Exhibition (AIIE) | San Diego">
+   <meta name="twitter:description" content="AIIE 2026, hosted by WIIPA, runs August 14-15, 2026 in San Diego, California. Exhibit your invention on an international stage.">
+   <meta name="twitter:image" content="https://wiipa.aiie.us/assets/images/banner-slider/1.jpg">
+
+   <!-- fonts -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-   <!-- animation -->
-   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-
-   <!-- magnific popup -->
-   <link rel="stylesheet" href="assets/css/magnific-popup.css">
-
-   <!-- font awesome -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-   integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-   crossorigin="anonymous" referrerpolicy="no-referrer">
-
-   <!-- slik carousel -->
-   <link rel="stylesheet" href="assets/css/slick-theme.css">
-   <link rel="stylesheet" href="assets/css/slick.css">
-
-   <!-- bootstrap -->
-   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+   <!-- Marks that JS is alive, so scroll-reveal may hide content. Must run
+        before first paint, otherwise revealed elements would flash. -->
+   <script>document.documentElement.className += " js";</script>
 
    <!-- css -->
-   <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="stylesheet" href="assets/css/aiie.css">
 
+   <!-- structured data -->
+   <script type="application/ld+json">
+   {
+     "@context": "https://schema.org",
+     "@graph": [
+       {
+         "@type": "Organization",
+         "@id": "https://wiipa.aiie.us/#organization",
+         "name": "World Invention Intellectual Property Associations",
+         "alternateName": "WIIPA",
+         "url": "https://wiipa.aiie.us/",
+         "logo": "https://wiipa.aiie.us/assets/images/logo/logo.png",
+         "email": "wiipa@aiie.us"
+       },
+       {
+         "@type": "WebSite",
+         "@id": "https://wiipa.aiie.us/#website",
+         "url": "https://wiipa.aiie.us/",
+         "name": "America Innovation Invention Exhibition (AIIE)",
+         "inLanguage": "en-US",
+         "publisher": { "@id": "https://wiipa.aiie.us/#organization" }
+       },
+       {
+         "@type": "Event",
+         "@id": "https://wiipa.aiie.us/#event-2026",
+         "name": "2026 America Innovation Invention Exhibition (AIIE)",
+         "alternateName": "AIIE 2026",
+         "description": "A two-day international invention exhibition hosted by WIIPA, open to inventors of all ages and backgrounds. Features exhibitions, competitions and an award ceremony judged on novelty, inventive step, industrial applicability and demonstration.",
+         "startDate": "2026-08-14",
+         "endDate": "2026-08-15",
+         "eventStatus": "https://schema.org/EventScheduled",
+         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+         "url": "https://wiipa.aiie.us/",
+         "image": "https://wiipa.aiie.us/assets/images/banner-slider/1.jpg",
+         "inLanguage": "en-US",
+         "location": {
+           "@type": "Place",
+           "name": "San Diego, California",
+           "address": {
+             "@type": "PostalAddress",
+             "addressLocality": "San Diego",
+             "addressRegion": "CA",
+             "addressCountry": "US"
+           }
+         },
+         "organizer": { "@id": "https://wiipa.aiie.us/#organization" },
+         "performer": { "@id": "https://wiipa.aiie.us/#organization" }
+       }
+     ]
+   }
+   </script>
 </head>
+
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 
+<!-- Dismissed on window load by aiie.js, with a 3.5s failsafe. Hidden
+     entirely when JS is unavailable, since nothing would remove it. -->
+<div class="preloader" role="status" aria-live="polite">
+   <img class="preloader__mark" src="assets/images/logo/logo.png" width="84" height="84"
+        alt="" aria-hidden="true">
+   <div class="preloader__bar"><span></span></div>
+   <p class="preloader__text">Loading</p>
+</div>
 
+<!-- ============================================================ header -->
+<header class="site-header">
+   <div class="wrap">
+      <nav class="nav" aria-label="Main">
+         <a class="nav__brand" href="index.html">
+            <img src="assets/images/logo/logo.png" width="56" height="56"
+                 alt="AIIE — America Innovation Invention Exhibition">
+            <span class="nav__brand-text">
+               <strong>AIIE 2026</strong>
+               <span>America Innovation Invention Exhibition</span>
+            </span>
+         </a>
 
-   <div class="body-wrap">
-      <!-- header area start -->
-      <header class="header-area">
-         <nav class="header-nav navbar fixed-top navbar-expand-lg position-absolute w-100">
-            <div class="container header-nav-menu">
-               <a class="navbar-brand" href="index.html">
-                  <img src="assets/images/logo/logo.png" alt="Header Logo" width="100px">
-               </a>
+         <button class="nav__toggle" type="button" aria-expanded="false"
+                 aria-controls="nav-menu" aria-label="Menu">
+            <span></span>
+         </button>
 
-               <div class="collapse navbar-collapse d-none d-lg-block">
-                  <ul class="navbar-nav m-auto">
-                     <li class="nav-item">
-                        <li class="nav-item">
-                        <a href="index.html" class="nav-link py-3">Homepage</a>
-                     </li>
-                     <li class="nav-item">
-                        <a href="#about" class="nav-link py-3">About</a>
-                     </li>
-                     <li class="nav-item">
-                        <a href="#sponsors" class="nav-link py-3">Sponsors</a>
-                     </li>
-                     <li class="nav-item">
-                        <a href="assets/files/2025_USA Result Final.pdf" class="nav-link py-3">Official Result</a>
-                     </li>
-					  </li>
-				   </ul>
-                  <div class="mode-and-button d-flex align-items-center">
-                     <button class="header-btn custom-btn2">Join us!</button>
-                  </div>
-               </div>
-
-               <!-- mobile menu -->
-               <div class="mobile-view-header d-block d-lg-none d-flex gap-3 align-items-center">
-                  <button class="header-btn custom-btn2">Join us!</button>
-
-                  <a class="border rounded-1 py-1 px-2 bg-light" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                     <span class="navbar-toggler-icon nav-toggler-icon"></span>
-                  </a>
-
-                  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" >
-                     <div class="offcanvas-header">
-                        <a class="navbar-brand" href="index.html">
-                           <img src="assets/images/logo/logo.png" alt="Header Logo">
-                        </a>
-                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                     </div>
-                     <div class="offcanvas-body">
-                        <div class="dropdown mt-3">
-                           <ul class="navbar-nav m-auto">
-                              <li class="nav-item">
-                                 <a href="index.html" class="nav-link py-3">Homepages</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a href="#about" class="nav-link py-3">About</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a href="#sponsors" class="nav-link py-3">Sponsors</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a href="assets/files/2025_USA Result Final.pdf" class="nav-link py-3">Official Result</a>
-                              </li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!-- end mobile menu -->
-
-            </div>
-         </nav>
-
-         <!-- hero sec start -->
-         <section class="hero-sec"  style="background-image: url(assets/images/banner/group.png);">
-            <div class="hero-slider-wrap">
-
-               <div class="hero-slider-item overflow-hidden">
-                  <div class="container">
-                     <div class="row align-items-center">
-                        <div class="col-lg-8 col-md-6 order-md-1 order-2">
-                           <div class="slider-item-content-wrap">
-                              <div class="item-content">
-                                 <h3 class="item-title1">
-                                    The leading nonprofit
-                                    exhibitionn of the year
-                                 </h3>
-                                 <p class="item-sub">
-                                    2026/8/14 - 2026/8/15
-                                 </p>
-                                 <div class="button-group">
-                                 </div>
-                                 <img src="assets/images/dots/dots.png" alt="Shadow Image" class="dots-1 opacity-50 img-moving-anim2">
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 order-md-2 order-1">
-                           <div class="item-image">
-                              <div class="img-1 img-moving-anim1">
-                                 <img src="assets/images/banner-slider/2.jpg" alt="Event template">
-                              </div>
-                              <div class="img-2 img-moving-anim2">
-                                 <img src="assets/images/banner-slider/1.jpg" alt="Event template">
-                              </div>
-                              <img src="assets/images/dots/dots2.png" alt="Shadow Image" class="dots-2 img-moving-anim3">
-                           </div>
-                        </div>
-                     </div>
-                     <div class="highlight-text img-moving-anim4">
-                        <strong class="big-title"><span class="text">Innovation</span></strong>
-                     </div>
-                  </div>
-               </div>
-
-
-
-            </div>
-         </section>
-         <!-- hero sec start -->
-      </header>
-      <!-- header area end -->
-
-
-      <!-- info sec start -->
-      <<div class="info-sec">
-         <div class="container">
-            <div class="info-countdown" style="background-image: url(assets/images/banner/bg.png);">
-               <ul class="counter-box d-flex justify-content-around" data-countdown="2026/8/15">
-               </ul>
-               <div class="dots img-moving-anim2">
-                  <img src="assets/images/dots/dots3.png" alt="Shadow Image">
-               </div>
-            </div>
-            <div class="information-area">
-               <center><div class="row g-4">
-                  <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="600">
-                     <div class="mail">
-                        <div class="icon"><img src="assets/images/icon/mail.svg" alt="Mail"></div>
-                        <a href="#" class="mail-link">wiipa@aiie.us</a>
-                     </div>
-                  </div>
-                  <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="800">
-                     <div class="location">
-                        <div class="icon"><img src="assets/images/icon/map-pin.svg" alt="Map"></div>
-                        <a href="#" class="location-link">America</a>
-                     </div>
-                  </div>
-               </div></center>
-            </div>
-         </div>
-      </div>
-      <!-- info sec end -->
-
-      <!-- about sec start -->
-      <section id="about" class="about-sec">
-         <div class="container">
-            <div class="section-head col-xl-9 m-auto text-center mb-5">
-              <span class="label">America Innovation Invention Exhibition</span>
-<h1 class="title mb-4">
-The 2026 America Innovation Invention Exhibition (AIIE) warmly welcomes inventors of all ages and from every walk of life.
-</h1>
-<p class="desc text-start px-3">
-Whether you are a student with a fresh idea, an entrepreneur developing new solutions, or an experienced innovator refining advanced technology, this is your stage to shine.<br><br>
-Hosted by the World Invention Intellectual Property Associations (WIIPA), this two-day international event will be held from <strong>August 14 to August 15, 2026</strong>, featuring exhibitions, competitions, and an inspiring award ceremony.<br><br>
-This gathering is not only about showcasing inventions—it is about celebrating the courage to imagine, the determination to create, and the vision to change the world. Every participant, regardless of outcome, will gain valuable experience, broaden perspectives, and connect with a global community of like-minded innovators.
-</p>
-<h3 class="mt-5 mb-3">Evaluation Criteria</h3>
-<ul class="text-start mx-auto" style="max-width:800px;">
-<li><strong>Novelty</strong> – How original and unique your invention is compared to existing solutions.</li>
-<li><strong>Inventive Step</strong> – The creativity behind your problem-solving and the improvements it brings to current technologies.</li>
-<li><strong>Industrial Applicability</strong> – The potential for real-world use, production, and market impact.</li>
-<li><strong>Demonstration</strong> – The clarity, effectiveness, and passion with which you present your invention.</li>
-</ul>
-<p class="desc text-start px-3 mt-4">
-In addition to these criteria, special jury awards will be given to honor outstanding contributions, exceptional creativity, or remarkable presentations.<br><br>
-WIIPA strongly believes that every invention tells a story of passion, persistence, and hope. By joining AIIE 2026, you are not only competing for awards—you are inspiring others, planting seeds of innovation, and shaping the future. We encourage you to take this chance with confidence: the world is waiting to see your ideas come alive.
-</p>
-            </div>
-         </div>
-      </section>
-      <!-- about sec end -->
-
-
-
-      <!-- brand sec start -->
-      <div id="sponsors" class="brand-sec">
-         <center><div class="container">
-         <img src="assets/images/brand/partner.png" width="80%" alt="Brand Image 1">
-         </div></center>
-      </div>
-      <!-- brand sec end -->
-
-      <!-- video sec start -->
-      <section class="video-sec" data-src="assets/images/banner/home-conference-video-bg.svg" data-parallax>
-         <div class="container">
-            <div class="row align-items-center">
-               <div class="col-lg-6">
-                  <div class="video-wrap">
-                     <div class="video-image img-moving-anim1">
-                        <img src="assets/images/photo/DSC09157-78.jpg" alt="Video Image 1">
-                     </div>
-                     <div class="dots img-moving-anim2">
-                        <img src="assets/images/dots/dots6.png" alt="Shadow Image">
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-6">
-                  <div class="video-content-wrap">
-                    <h2 class="title mb-4">
-Be inspired by expert speakers in design, video, technology, and more!
-</h2>
-<p class="desc text-start">
-The upcoming 2026 America Innovation Invention Exhibition (AIIE), hosted by the World Invention Intellectual Property Associations (WIIPA), continues to be a global stage where creativity, knowledge, and opportunities converge. This two-day event, taking place from <strong>August 15 to August 16, 2026</strong>, welcomes inventors of all ages and backgrounds — students, companies, professionals, educators, and innovators alike.<br><br>
-One of the exhibition’s greatest strengths is its openness. With no age limit and no restriction on background, it empowers both young learners with fresh perspectives and seasoned professionals with advanced expertise to present their creations side by side.
-</p>
-<h4 class="mt-4 mb-3">At this international platform, participants will have the opportunity to:</h4>
-<ul class="text-start">
-<li>- Engage in meaningful exchange with inventors, researchers, companies, and industry leaders.</li>
-<li>- Gain valuable insights from expert speakers in fields such as design, technology, video production, entrepreneurship, and more.</li>
-<li>- Build powerful global networks that foster collaboration and future opportunities.</li>
-<li>- Receive recognition through competition and awards, celebrating creativity and innovation.</li>
-</ul>
-<p class="desc text-start mt-4">
-The 2026 AIIE is not just an exhibition — it is a celebration of passion, persistence, and the power of ideas. Whether you are just beginning your journey as a student, an entrepreneur seeking breakthroughs, or a professional innovator shaping industries, this event is your chance to connect, create, and inspire on the international stage.
-</p>
-                     <div class="management d-flex">
-                        <h3 class="event count-block p-lg-5 p-3"><span>03</span>Days Event</h3>
-                        <h3 class="speakers count-block p-lg-5 p-3"><span>15+</span>Jury</h3>
-                     </div>
-                     <div class="dots img-moving-anim3">
-                        <img src="assets/images/dots/dots7.png" alt="Shadow Image">
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- video sec end -->
-
-
-      <div class="container">
-         <hr>
-      </div>
-      <!-- cta sec start-->
-      <section class="cta-sec">
-         <div class="container">
-            <div class="cta-content-wrap text-center" data-aos="fade-right" data-aos-duration="1000">
-               <h2 class="cta-title  m-auto mb-4 mx-5">
-                  Join us for Eventor Collaborative
-               </h2>
-               <p class="desc mb-5">
-                   Thank you very much for your continued support and we hope to get your
-valuable presence in this momentous event for another milestone in the world of invention exhibition.
-               </p>
-               <div class="dots">
-                  <img src="assets/images/dots/dots9.png" alt="Shadow Image" class="cta-dots-1 img-moving-anim1">
-                  <img src="assets/images/dots/dots10.png" alt="Shadow Image" class="cta-dots-2 img-moving-anim2">
-               </div>
-            </div>
-         </div>
-         <div class="shape">
-            <img src="assets/images/shape/4.svg" alt="Shape">
-         </div>
-      </section>
-      <!-- cta sec end-->
-
-	<div class="container">
-         <hr>
-      </div>
-
-	<!-- gallery sec start -->
-      <section class="gallery-sec" data-aos="fade-up" data-aos-duration="1200">
-         <div class="container-fluid">
-         <div class="col-xl-8 section-head text-center m-auto mb-5">
-            <span class="label">Gallery</span>
-            <h2 class="title ">
-               Photos from the Event
-            </h2>
-         </div>
-
-         <center><div class="image-gallery-wrap zoom-gallery d-flex align-items-center">
-
-            <div class="row g-4">
-               <div class="col-md-6 col-lg-4">
-                  <div class="image-gallery-item" data-aos="fade-up" data-aos-duration="1000">
-                     <a class="item-thumb" href="assets/images/photo/DSC09278-124.jpg">
-                        <img src="assets/images/photo/DSC09278-124.jpg" alt="Image Gallery 1">
-                     </a>
-
-                  </div>
-               </div>
-               <div class="col-md-6 col-lg-4">
-                  <div class="image-gallery-item" data-aos="fade-up" data-aos-duration="800">
-                     <a class="item-thumb" href="assets/images/photo/DSC09684-285.jpg">
-                        <img src="assets/images/photo/DSC09684-285.jpg" alt="Image Gallery 2">
-                     </a>
-                  </div>
-               </div>
-				<div class="col-md-6 col-lg-4">
-                  <div class="image-gallery-item" data-aos="fade-up" data-aos-duration="1000">
-                     <a class="item-thumb" href="assets/images/photo/DSC09333-147.jpg">
-                        <img src="assets/images/photo/DSC09333-147.jpg" alt="Image Gallery 1">
-                     </a>
-
-                  </div>
-               </div>
-            </div>
-         </div></center>
-      </div>
-      </section>
-      <!-- gallery sec end -->
-
-
-      <!-- contact sec start -->
-      <section class="contact-sec" data-aos="zoom-in" data-aos-duration="1000">
-         <div class="container">
-            <div class="col-xl-5 section-head text-center m-auto mb-5">
-               <span class="label">Contact us</span>
-               <h2 class="title mx-2">
-                  We are here when you need us.
-                  Need immediate assistance?
-               </h2>
-            </div>
-            <div class="contact-wrap bg-none p-0">
-               <div class="dots">
-                  <img src="assets/images/dots/dots13.png" alt="Shadow Image" class="contact-dots-1 img-moving-anim2">
-               </div>
-               <div class="contact-wrap row py-4 px-3 contact align-items-center m-0">
-                  <div class="col-lg-4">
-                     <div class="contact-thumb-wrap" style="background-image: url(assets/images/banner/contact-bg.png);">
-                        <div class="contact-content">
-                           <h5 class="title text-white">Contact Us</h5>
-                           <p class="desc">
-                              Get in touch and let us know how
-                              we can help.
-                           </p>
-                           <div class="info">
-                              <a class="icon d-block mb-3">
-                                 <img src="assets/images/icon/mail1.svg" alt="Mail" style="color: #fff;"> wiipa@aiie.us
-                              </a>
-                              <a class="location d-block mb-3">
-                                 <img src="assets/images/icon/map-pin2.svg" alt="Map"> San Diego.CA
-                              </a>
-
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-8 mt-4 mt-lg-0">
-                     <form class="contact-form">
-                        <div class="row gy-3">
-                           <div class="col-lg-6">
-                              <label for="exampleFormControlInput1" class="form-label">First Name</label>
-                              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your First Name" required>
-                           </div>
-                           <div class="col-lg-6">
-                              <label for="exampleFormControlInput2" class="form-label">Last Name</label>
-                              <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Your Last Name" required>
-                           </div>
-                           <div class="col-lg-6">
-                              <label for="exampleFormControlInput3" class="form-label">Email address</label>
-                              <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="Enter Email" required>
-                           </div>
-                           <div class="col-lg-6">
-                              <label for="exampleFormControlInput4" class="form-label">Subject</label>
-                              <input type="text" class="form-control" id="exampleFormControlInput4" placeholder="Enter Subject" required>
-                           </div>
-                        </div>
-                        <div class="mb-3">
-
-                        </div>
-                        <div class="text-area col-12 mb-3">
-                           <label for="exampleFormControlTextarea1" class="form-label">Textarea</label>
-                           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Your Comment" ></textarea>
-                        </div>
-                        <button class="custom-btn2" type="button" onclick="window.location.href='mailto:wiipa@aiie.us'">Submit</button>
-                     </form>
-                  </div>
-               </div>
-
-               <div class="dots">
-                  <img src="assets/images/dots/dots14.png" alt="Shadow Image" class="contact-dots-2 img-moving-anim3">
-               </div>
-            </div>
-         </div>
-      </section>
-
-
-      <!-- footer area start -->
-      <footer class="footer-area" style="background-image: url(assets/images/banner/Footer.png);">
-         <div class="container">
-            <div class="footer-top">
-            </div>
-
-            <div class="footer-copyright-area text-center pb-3">
-               <span>© 2025 AIIE. All rights reserved.</span>
-            </div>
-         </div>
-      </footer>
-      <!-- footer area end -->
-
-
-
-
-      <!-- Modal -->
-      <div class="modal fade popup-modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
-         <div class="modal-dialog modal-lg popup-dialogue modal-dialog-centered">
-            <div class="modal-content popup-content p-4 bg-white">
-               <button type="button" class="btn btn-secondary  ms-auto" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i></button>
-
-               <div class="modal-body popup-body">
-                  <iframe width="100%" height="400" src="https://www.youtube.com/embed/1dtzSRlfBDk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-               </div>
-
-            </div>
-         </div>
-      </div>
-
-      <!-- Button trigger modal -->
-
-      <!-- Modal 2 -->
-      <div class="modal  popup-box fade" id="exampleModal" tabindex="-1" aria-hidden="true">
-         <div class="modal-dialog popup-box-dialog modal-dialog-centered">
-            <div class="modal-content popup-box-content">
-               <div class="popup-card" style="width:100%">
-                  <button type="button" class="btn popup2-btn  ms-auto" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i></button>
-                  <img src="assets/images/popup.png" class="card-img-top" alt="popup-bg">
-                  <div class="card-body popup-card-body">
-                     <div class="popup-title-area">
-                        <p class="popup-sub">October 2, 2023</p>
-                        <h5 class="card-title popup-title">Virtual sessions. Eventor Live@MAX</h5>
-                     </div>
-                     <a href="#" class="btn popup-play" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-play"></i></a>
-                  </div>
-
-                     <div id="eventbrite-widget-container-443112520477"></div>
-
-                     <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
-
-                     <script type="text/javascript">
-                        var exampleCallback = function() {
-                           console.log('Order complete!');
-                        };
-
-                        window.EBWidgets.createWidget({
-                           // Required
-                           widgetType: 'checkout',
-                           eventId: '443112520477',
-                           iframeContainerId: 'eventbrite-widget-container-443112520477',
-
-                           // Optional
-                           iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
-                           onOrderComplete: exampleCallback  // Method called when an order has successfully completed
-                        });
-                     </script>
-
-               </div>
-            </div>
-         </div>
-      </div>
-
-
-
+         <ul class="nav__menu" id="nav-menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#criteria">Judging</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#sponsors">Partners</a></li>
+            <li><a href="assets/files/2025_USA%20Result%20Final.pdf">2025 Results</a></li>
+            <li><a class="btn btn--primary btn--sm" href="mailto:wiipa@aiie.us?subject=AIIE%202026%20%E2%80%94%20I%20want%20to%20join">Join us!</a></li>
+         </ul>
+      </nav>
    </div>
-   <!-- jquery -->
-   <script src="assets/js/jquery.min.js"></script>
-   <script src="assets/js/jquery.countdown.min.js"></script>
+</header>
 
-   <!-- animation -->
-   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<main id="main">
 
-   <!-- magnific popup -->
-   <script src="assets/js/jquery.magnific-popup.min.js"></script>
+   <!-- ========================================================= hero -->
+   <section class="hero">
+      <div class="wrap">
+         <div class="hero__grid">
+            <div>
+               <p class="hero__badge">
+                  <b>AIIE 2026</b> Hosted by WIIPA
+               </p>
 
-   <!-- bootstrap -->
-   <script src="assets/js/bootstrap.min.js"></script>
+               <h1>The leading nonprofit<br><span class="gradient-text">invention exhibition</span> of the year</h1>
 
-   <!-- slick -->
-   <script src="assets/js/slick.min.js"></script>
+               <p class="hero__sub">
+                  Two days where students, entrepreneurs and seasoned innovators put their
+                  ideas in front of an international jury — and the world.
+               </p>
 
-   <!-- parallax js -->
-   <script src="assets/js/parallax.min.js"></script>
+               <ul class="hero__meta">
+                  <li>
+                     <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                     <time datetime="2026-08-14">August 14</time>–<time datetime="2026-08-15">15, 2026</time>
+                  </li>
+                  <li>
+                     <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                     San Diego, California
+                  </li>
+                  <li>
+                     <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg>
+                     Open to all ages
+                  </li>
+               </ul>
 
-   <!-- javaScript -->
-   <script src="assets/js/main.js"></script>
+               <div class="hero__actions">
+                  <a class="btn btn--primary" href="mailto:wiipa@aiie.us?subject=AIIE%202026%20%E2%80%94%20I%20want%20to%20join">Join us!</a>
+                  <a class="btn btn--ghost" href="#about">Learn more</a>
+               </div>
+            </div>
 
-   <!-- color switch -->
-   <script src="color-switch/switch.js"></script>
+            <div class="hero__media" aria-hidden="true">
+               <figure class="shot-a">
+                  <img src="assets/images/banner-slider/2.jpg" width="1920" height="1280"
+                       fetchpriority="high" decoding="async"
+                       alt="Exhibitors presenting inventions at the America Innovation Invention Exhibition">
+               </figure>
+               <figure class="shot-b">
+                  <img src="assets/images/banner-slider/1.jpg" width="1920" height="1280"
+                       fetchpriority="high" decoding="async"
+                       alt="Award winners at the America Innovation Invention Exhibition in San Diego">
+               </figure>
+            </div>
+         </div>
+      </div>
+   </section>
 
+   <!-- ==================================================== countdown -->
+   <div class="countdown-band">
+      <div class="wrap">
+         <div class="countdown">
+            <div class="countdown__label">
+               <span class="eyebrow">Countdown</span>
+               <p>Doors open on the morning of August 14, 2026.</p>
+            </div>
+            <ul class="countdown__clock" data-countdown="2026-08-14T09:00:00-07:00">
+               <li><b>--</b><span>Days</span></li>
+               <li><b>--</b><span>Hours</span></li>
+               <li><b>--</b><span>Minutes</span></li>
+               <li><b>--</b><span>Seconds</span></li>
+            </ul>
+         </div>
+      </div>
+   </div>
 
+   <!-- ======================================================== stats -->
+   <section class="section">
+      <div class="wrap">
+         <ul class="stats reveal-group" style="list-style:none;margin:0;padding:0">
+            <li class="stat"><b class="gradient-text">02</b><span>Days of exhibition</span></li>
+            <li class="stat"><b class="gradient-text">15+</b><span>International jury members</span></li>
+            <li class="stat"><b class="gradient-text">04</b><span>Evaluation criteria</span></li>
+            <li class="stat"><b class="gradient-text">No&nbsp;limit</b><span>On age or background</span></li>
+         </ul>
+      </div>
+   </section>
+
+   <!-- ======================================================== about -->
+   <section class="section section--soft" id="about">
+      <div class="wrap">
+         <div class="split">
+            <div class="reveal">
+               <span class="eyebrow">About the exhibition</span>
+               <h2>A stage for every inventor, whatever stage you are at</h2>
+               <div class="prose" style="margin-top:22px">
+                  <p>
+                     Whether you are a student with a fresh idea, an entrepreneur developing new
+                     solutions, or an experienced innovator refining advanced technology, this is
+                     your stage to shine.
+                  </p>
+                  <p>
+                     Hosted by the <strong>World Invention Intellectual Property Associations (WIIPA)</strong>,
+                     this two-day international event runs from <strong>August 14 to August 15, 2026</strong>,
+                     featuring exhibitions, competitions and an inspiring award ceremony.
+                  </p>
+                  <p>
+                     This gathering is not only about showcasing inventions — it is about celebrating
+                     the courage to imagine, the determination to create, and the vision to change the
+                     world. Every participant, regardless of outcome, gains valuable experience,
+                     broader perspectives, and a global community of like-minded innovators.
+                  </p>
+               </div>
+               <a class="btn btn--primary" href="mailto:wiipa@aiie.us?subject=AIIE%202026%20%E2%80%94%20I%20want%20to%20join">Join us!</a>
+            </div>
+
+            <div class="media-frame reveal reveal--scale">
+               <img src="assets/images/photo/DSC09157-78.jpg" width="1920" height="1280"
+                    loading="lazy" decoding="async"
+                    alt="Expert speaker addressing attendees at the America Innovation Invention Exhibition">
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- ===================================================== criteria -->
+   <section class="section" id="criteria">
+      <div class="wrap">
+         <div class="section-head section-head--center reveal">
+            <span class="eyebrow">Evaluation criteria</span>
+            <h2>How the jury scores your invention</h2>
+            <p>
+               Four criteria decide the medals. Beyond them, special jury awards honour outstanding
+               contributions, exceptional creativity and remarkable presentations.
+            </p>
+         </div>
+
+         <div class="cards reveal-group">
+            <article class="card">
+               <span class="card__num">01</span>
+               <h3>Novelty</h3>
+               <p>How original and unique your invention is compared with existing solutions.</p>
+            </article>
+            <article class="card">
+               <span class="card__num">02</span>
+               <h3>Inventive Step</h3>
+               <p>The creativity behind your problem-solving, and the improvements it brings to current technologies.</p>
+            </article>
+            <article class="card">
+               <span class="card__num">03</span>
+               <h3>Industrial Applicability</h3>
+               <p>The potential for real-world use, production and market impact.</p>
+            </article>
+            <article class="card">
+               <span class="card__num">04</span>
+               <h3>Demonstration</h3>
+               <p>The clarity, effectiveness and passion with which you present your invention.</p>
+            </article>
+         </div>
+      </div>
+   </section>
+
+   <!-- ================================================ what you gain -->
+   <section class="section section--soft">
+      <div class="wrap">
+         <div class="split">
+            <div class="media-frame reveal reveal--scale">
+               <img src="assets/images/photo/DSC09333-147.jpg" width="1920" height="1280"
+                    loading="lazy" decoding="async"
+                    alt="Jury members evaluating an invention during the AIIE judging session">
+            </div>
+
+            <div class="reveal">
+               <span class="eyebrow">Why take part</span>
+               <h2>Be inspired by experts in design, technology and more</h2>
+               <p class="lead" style="margin-top:20px">
+                  One of the exhibition's greatest strengths is its openness. With no age limit and no
+                  restriction on background, young learners and seasoned professionals present their
+                  creations side by side.
+               </p>
+
+               <ul class="checklist">
+                  <li>
+                     <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+                     <span><b>Exchange ideas</b> with inventors, researchers, companies and industry leaders.</span>
+                  </li>
+                  <li>
+                     <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+                     <span><b>Learn from expert speakers</b> in design, technology, video production, entrepreneurship and more.</span>
+                  </li>
+                  <li>
+                     <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+                     <span><b>Build global networks</b> that foster collaboration and future opportunities.</span>
+                  </li>
+                  <li>
+                     <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+                     <span><b>Earn recognition</b> through competition and awards celebrating creativity and innovation.</span>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- ====================================================== gallery -->
+   <section class="section" id="gallery">
+      <div class="wrap">
+         <div class="section-head section-head--center reveal">
+            <span class="eyebrow">Gallery</span>
+            <h2>Photos from the event</h2>
+            <p>Moments from the exhibition floor, the judging sessions and the award ceremony.</p>
+         </div>
+
+         <div class="gallery reveal">
+            <a href="assets/images/photo/DSC09278-124.jpg">
+               <img src="assets/images/photo/DSC09278-124.jpg" width="1920" height="1280" loading="lazy" decoding="async"
+                    alt="Inventors showcasing their projects on the AIIE exhibition floor">
+            </a>
+            <a href="assets/images/photo/DSC09684-285.jpg">
+               <img src="assets/images/photo/DSC09684-285.jpg" width="1920" height="1280" loading="lazy" decoding="async"
+                    alt="Medal winners at the AIIE award ceremony">
+            </a>
+            <a href="assets/images/photo/DSC09333-147.jpg">
+               <img src="assets/images/photo/DSC09333-147.jpg" width="1920" height="1280" loading="lazy" decoding="async"
+                    alt="Jury members evaluating an invention during the AIIE judging session">
+            </a>
+         </div>
+      </div>
+   </section>
+
+   <!-- ===================================================== partners -->
+   <section class="section section--soft" id="sponsors">
+      <div class="wrap">
+         <div class="section-head section-head--center reveal">
+            <span class="eyebrow">Partners</span>
+            <h2>Backed by innovators worldwide</h2>
+            <p>Associations, universities and invention bodies from across the globe support AIIE.</p>
+         </div>
+
+         <div class="partners-frame reveal">
+            <img src="assets/images/brand/partner.png" width="1800" height="765" loading="lazy" decoding="async"
+                 alt="Logos of the international associations and organisations partnering with AIIE 2026">
+         </div>
+      </div>
+   </section>
+
+   <!-- ========================================================== CTA -->
+   <section class="section">
+      <div class="wrap">
+         <div class="cta reveal reveal--scale">
+            <h2>Join us at AIIE 2026</h2>
+            <p>
+               Thank you for your continued support. We hope to welcome you to this momentous event —
+               another milestone in the world of invention exhibitions.
+            </p>
+            <div class="cta__actions">
+               <a class="btn btn--ghost" href="mailto:wiipa@aiie.us?subject=AIIE%202026%20%E2%80%94%20I%20want%20to%20join">Join us!</a>
+               <a class="btn btn--outline" href="assets/files/2025_USA%20Result%20Final.pdf">View 2025 results</a>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- ====================================================== contact -->
+   <section class="section section--soft" id="contact">
+      <div class="wrap">
+         <div class="section-head section-head--center reveal">
+            <span class="eyebrow">Contact us</span>
+            <h2>We are here when you need us</h2>
+            <p>Questions about entering, judging or visiting? Send us a note.</p>
+         </div>
+
+         <div class="contact-grid">
+            <div class="contact-card reveal reveal--left">
+               <h3>Get in touch</h3>
+               <p>Tell us how we can help and we will get back to you.</p>
+
+               <ul class="contact-list">
+                  <li>
+                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+                     <div><span>Email</span><a href="mailto:wiipa@aiie.us">wiipa@aiie.us</a></div>
+                  </li>
+                  <li>
+                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                     <div><span>Location</span><strong>San Diego, California</strong></div>
+                  </li>
+                  <li>
+                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                     <div><span>Event dates</span><strong>August 14–15, 2026</strong></div>
+                  </li>
+               </ul>
+            </div>
+
+            <form class="form reveal reveal--right" data-mailto="wiipa@aiie.us" novalidate>
+               <div class="form__row">
+                  <div class="field">
+                     <label for="firstName">First name</label>
+                     <input type="text" id="firstName" name="firstName" autocomplete="given-name" placeholder="Your first name" required>
+                  </div>
+                  <div class="field">
+                     <label for="lastName">Last name</label>
+                     <input type="text" id="lastName" name="lastName" autocomplete="family-name" placeholder="Your last name" required>
+                  </div>
+               </div>
+
+               <div class="form__row">
+                  <div class="field">
+                     <label for="email">Email address</label>
+                     <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+                  </div>
+                  <div class="field">
+                     <label for="subject">Subject</label>
+                     <input type="text" id="subject" name="subject" placeholder="What is this about?" required>
+                  </div>
+               </div>
+
+               <div class="field">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" rows="5" placeholder="Tell us about your invention or your question" required></textarea>
+               </div>
+
+               <button class="btn btn--primary" type="submit" style="justify-self:start">Send message</button>
+               <p class="form__note">
+                  This opens your email app with the message ready to send to wiipa@aiie.us —
+                  nothing is stored on this site.
+               </p>
+            </form>
+         </div>
+      </div>
+   </section>
+
+</main>
+
+<!-- ============================================================ footer -->
+<footer class="site-footer footer">
+   <div class="wrap">
+      <div class="footer__grid">
+
+         <div>
+            <div class="footer__brand">
+               <img src="assets/images/logo/logo.png" width="60" height="60" loading="lazy"
+                    alt="AIIE — America Innovation Invention Exhibition">
+               <span>
+                  <strong>AIIE 2026</strong>
+                  <span>America Innovation Invention Exhibition</span>
+               </span>
+            </div>
+            <p class="footer__about">
+               An international invention exhibition hosted by the World Invention Intellectual
+               Property Associations (WIIPA), open to inventors of every age and background.
+            </p>
+            <a class="btn btn--primary btn--sm" href="mailto:wiipa@aiie.us?subject=AIIE%202026%20%E2%80%94%20I%20want%20to%20join">Join us!</a>
+         </div>
+
+         <div>
+            <h4>Explore</h4>
+            <ul class="footer__links">
+               <li><a href="#about">About the exhibition</a></li>
+               <li><a href="#criteria">Evaluation criteria</a></li>
+               <li><a href="#gallery">Gallery</a></li>
+               <li><a href="#sponsors">Partners</a></li>
+               <li><a href="#contact">Contact</a></li>
+            </ul>
+         </div>
+
+         <div>
+            <h4>Editions</h4>
+            <ul class="footer__links">
+               <li><a href="index.html">AIIE 2026</a></li>
+               <li><a href="aiie/index.html">AIIE 2025 archive</a></li>
+               <li><a href="assets/files/2025_USA%20Result%20Final.pdf">2025 official results (PDF)</a></li>
+            </ul>
+         </div>
+
+         <div>
+            <h4>Event details</h4>
+            <ul class="footer__detail">
+               <li>
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                  <div><span>Dates</span><strong>August 14–15, 2026</strong></div>
+               </li>
+               <li>
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <div><span>Location</span><strong>San Diego, California</strong></div>
+               </li>
+               <li>
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+                  <div><span>Email</span><a href="mailto:wiipa@aiie.us">wiipa@aiie.us</a></div>
+               </li>
+            </ul>
+         </div>
+
+      </div>
+
+      <div class="footer__bar">
+         <div class="footer__bar-left">
+            <p>&copy; <span data-year>2026</span> AIIE. All rights reserved.</p>
+            <p class="footer__credit">
+               Designed &amp; built by
+               <a href="https://www.extrastudio.tw" target="_blank" rel="noopener noreferrer">EXTRA PRODUCTION</a>
+            </p>
+         </div>
+         <nav aria-label="Footer">
+            <a href="https://wiipa.cc" rel="noopener">Organised by WIIPA</a>
+            <a href="mailto:wiipa@aiie.us">wiipa@aiie.us</a>
+            <a class="to-top" href="#main">
+               Back to top
+               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg>
+            </a>
+         </nav>
+      </div>
+   </div>
+</footer>
+
+<!-- lightbox target for the gallery -->
+<div class="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+   <button class="lightbox__close" type="button" aria-label="Close">&times;</button>
+   <img alt="">
+</div>
+
+<script src="assets/js/aiie.js" defer></script>
 </body>
 </html>

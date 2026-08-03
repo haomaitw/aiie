@@ -4,7 +4,23 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>2025 America Innovation Invention Exhibition | Official Website</title>
+   <!-- primary meta -->
+   <title>AIIE 2025 Archive | America Innovation Invention Exhibition</title>
+   <meta name="description" content="Archive of the 2025 America Innovation Invention Exhibition (AIIE), held August 15-16, 2025 in San Diego, California. For the current edition see AIIE 2026.">
+   <link rel="canonical" href="https://wiipa.aiie.us/aiie/">
+   <meta name="robots" content="index, follow, max-image-preview:large">
+   <meta name="theme-color" content="#6600CC">
+
+   <!-- favicon -->
+   <link rel="icon" href="assets/images/logo/logo.png" type="image/png">
+
+   <!-- open graph -->
+   <meta property="og:type" content="website">
+   <meta property="og:site_name" content="America Innovation Invention Exhibition (AIIE)">
+   <meta property="og:title" content="AIIE 2025 Archive | America Innovation Invention Exhibition">
+   <meta property="og:description" content="Archive of the 2025 America Innovation Invention Exhibition (AIIE), held August 15-16, 2025 in San Diego, California.">
+   <meta property="og:url" content="https://wiipa.aiie.us/aiie/">
+   <meta property="og:locale" content="en_US">
 
    <!-- google font -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,8 +28,12 @@
    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
    <!-- animation -->
-   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+   <link rel="stylesheet" href="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.css"
+   integrity="sha384-6oNXtl81GMcKAnWPPXinWlPskKUQ0NGG1/XeyMfC5RgCJKPc03w0rHVt1jyoJLf0"
+   crossorigin="anonymous" referrerpolicy="no-referrer">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+   integrity="sha384-xyZLiqnBEFn1hDkS8VeG/YHoqOjS/ucimT8TI6GDr9+ZP1UNbZr6d/q0ldMi/xvL"
+   crossorigin="anonymous" referrerpolicy="no-referrer">
 
    <!-- magnific popup -->
    <link rel="stylesheet" href="assets/css/magnific-popup.css">
@@ -462,7 +482,7 @@ here to communicate with other inventors and companies.
          <div class="container">
             <div class="cta-content-wrap text-center" data-aos="fade-right" data-aos-duration="1000">
                <h2 class="cta-title  m-auto mb-4 mx-5">
-                  Join us for Eventor Collaborative
+                  Join us at AIIE 2025
                </h2>
                <p class="desc mb-5">
                    Thank you very much for your continued support and we hope to get your
@@ -621,62 +641,12 @@ valuable presence in this momentous event for another milestone in the world of 
 
 
 
-      <!-- Modal -->
-      <div class="modal fade popup-modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
-         <div class="modal-dialog modal-lg popup-dialogue modal-dialog-centered">
-            <div class="modal-content popup-content p-4 bg-white">
-               <button type="button" class="btn btn-secondary  ms-auto" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i></button>
-
-               <div class="modal-body popup-body">
-                  <iframe width="100%" height="400" src="https://www.youtube.com/embed/1dtzSRlfBDk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-               </div>
-
-            </div>
-         </div>
-      </div>
-
-      <!-- Button trigger modal -->
-
-      <!-- Modal 2 -->
-      <div class="modal  popup-box fade" id="exampleModal" tabindex="-1" aria-hidden="true">
-         <div class="modal-dialog popup-box-dialog modal-dialog-centered">
-            <div class="modal-content popup-box-content">
-               <div class="popup-card" style="width:100%">
-                  <button type="button" class="btn popup2-btn  ms-auto" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i></button>
-                  <img src="assets/images/popup.png" class="card-img-top" alt="popup-bg">
-                  <div class="card-body popup-card-body">
-                     <div class="popup-title-area">
-                        <p class="popup-sub">October 2, 2023</p>
-                        <h5 class="card-title popup-title">Virtual sessions. Eventor Live@MAX</h5>
-                     </div>
-                     <a href="#" class="btn popup-play" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-play"></i></a>
-                  </div>
-
-                     <div id="eventbrite-widget-container-443112520477"></div>
-
-                     <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
-
-                     <script type="text/javascript">
-                        var exampleCallback = function() {
-                           console.log('Order complete!');
-                        };
-
-                        window.EBWidgets.createWidget({
-                           // Required
-                           widgetType: 'checkout',
-                           eventId: '443112520477',
-                           iframeContainerId: 'eventbrite-widget-container-443112520477',
-
-                           // Optional
-                           iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
-                           onOrderComplete: exampleCallback  // Method called when an order has successfully completed
-                        });
-                     </script>
-
-               </div>
-            </div>
-         </div>
-      </div>
+      <!--
+         Removed: two unreachable template modals (#staticBackdrop / #exampleModal).
+         Nothing triggered them, but they still pulled in the Eventbrite widget
+         script and a YouTube embed on every visit, and called
+         window.EBWidgets.createWidget() for a retired 2023 event id.
+      -->
 
 
 
@@ -686,7 +656,9 @@ valuable presence in this momentous event for another milestone in the world of 
    <script src="assets/js/jquery.countdown.min.js"></script>
 
    <!-- animation -->
-   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script src="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.js"
+   integrity="sha384-ZGo5k5ISlEzWLoXyt+lnvKt9j03Z7GkxXh14zLqVy098XJhcdKHjL8pQYVMI8WiH"
+   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
    <!-- magnific popup -->
    <script src="assets/js/jquery.magnific-popup.min.js"></script>

@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Unfinished theme boilerplate - not real content
+Disallow: /blog.html
+Disallow: /aiie/blog.html
+
+# Build/editor artefacts
+Disallow: /prepros.config
+Disallow: /aiie/prepros.config
+
+Sitemap: https://wiipa.aiie.us/sitemap.xml
