@@ -255,7 +255,7 @@ p  { margin: 0 0 1.1em; }
 /* photo collage */
 .hero__media { position: relative; min-height: 380px; }
 .hero__media figure { margin: 0; position: absolute; border-radius: var(--radius); overflow: hidden; }
-.hero__media img { width: 100%; height: 100%; object-fit: cover; }
+.hero__media img { width: 100%; height: 100%; object-fit: cover; object-position: center 42%; }
 /* The idle float is started by the intro animation in the MOTION section,
    so the two never fight over `transform`. Without JS these sit still. */
 .hero__media .shot-a {
@@ -342,7 +342,7 @@ p  { margin: 0 0 1.1em; }
    position: relative; border-radius: var(--radius); overflow: hidden;
    box-shadow: var(--shadow-lg);
 }
-.media-frame img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.media-frame img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center 42%; }
 
 /* ----------------------------------------------------------------- cards */
 
@@ -411,6 +411,25 @@ p  { margin: 0 0 1.1em; }
    transition: background .25s var(--ease);
 }
 .lightbox__close:hover { background: rgba(255, 255, 255, .3); }
+
+.lightbox__nav {
+   position: absolute; top: 50%; transform: translateY(-50%);
+   display: grid; place-items: center;
+   width: 52px; height: 52px;
+   border: none; border-radius: 50%;
+   background: rgba(255, 255, 255, .16); color: #fff;
+   cursor: pointer;
+}
+.lightbox__nav--prev { left: max(18px, 3vw); }
+.lightbox__nav--next { right: max(18px, 3vw); }
+.lightbox__nav:hover { background: rgba(255, 255, 255, .32); }
+
+.lightbox__count {
+   position: absolute; left: 0; right: 0; bottom: 22px;
+   margin: 0; text-align: center;
+   color: rgba(255, 255, 255, .72);
+   font-size: .9rem; font-variant-numeric: tabular-nums;
+}
 
 /* -------------------------------------------------------------- partners */
 
@@ -801,6 +820,7 @@ html:not(.js) .preloader { display: none; }
 }
 .lightbox.is-open img { transform: none; opacity: 1; }
 .lightbox__close { transition: background .25s var(--ease), transform .3s var(--ease); }
+.lightbox__nav { transition: background .25s var(--ease); }
 .lightbox__close:hover { transform: rotate(90deg); }
 
 /* ------------------------------------------------------------ responsive */
@@ -839,12 +859,21 @@ html:not(.js) .preloader { display: none; }
 
 @media (max-width: 700px) {
    body { font-size: 16px; }
-   .gallery { grid-template-columns: 1fr; }
+   .gallery { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+   /* the side controls would sit on top of the photo on a narrow screen */
+   .lightbox__nav { width: 44px; height: 44px; top: auto; bottom: 16px; transform: none; }
+   .lightbox__nav--prev { left: 22%; }
+   .lightbox__nav--next { right: 22%; }
+   .lightbox__count { bottom: 72px; }
    .countdown__clock { grid-template-columns: repeat(2, 1fr); }
    .form__row { grid-template-columns: 1fr; }
    .footer__grid { grid-template-columns: 1fr; }
    .footer__bar { flex-direction: column; align-items: flex-start; }
    .hero__media { min-height: 300px; }
+}
+
+@media (max-width: 420px) {
+   .gallery { grid-template-columns: 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {

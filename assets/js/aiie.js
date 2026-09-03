@@ -93,7 +93,8 @@
          var diff = target - Date.now();
 
          if (diff <= 0) {
-            clock.innerHTML = '<li class="is-over"><b>The exhibition is here — welcome to AIIE 2026.</b></li>';
+            clock.innerHTML = '<li class="is-over"><b>AIIE 2026 has taken place — ' +
+               '<a href="assets/files/2026_USA_Result_Final.pdf">see the official award results</a>.</b></li>';
             clock.style.gridTemplateColumns = "1fr";
             clearInterval(timer);
             return;
@@ -194,7 +195,21 @@
    var lightbox = document.querySelector(".lightbox");
    if (lightbox) {
       var frame = lightbox.querySelector("img");
+      var counter = lightbox.querySelector(".lightbox__count");
+      var links = Array.prototype.slice.call(document.querySelectorAll(".gallery a"));
       var lastFocus = null;
+      var current = 0;
+
+      var show = function (i) {
+         // wrap at both ends so the arrows never dead-end
+         current = (i + links.length) % links.length;
+         var link = links[current];
+         frame.src = link.getAttribute("href");
+         frame.alt = link.querySelector("img").alt;
+         if (counter) {
+            counter.textContent = (current + 1) + " / " + links.length;
+         }
+      };
 
       var closeBox = function () {
          lightbox.classList.remove("is-open");
@@ -205,23 +220,30 @@
          if (lastFocus) { lastFocus.focus(); }
       };
 
-      document.querySelectorAll(".gallery a").forEach(function (link) {
+      links.forEach(function (link, i) {
          link.addEventListener("click", function (e) {
             e.preventDefault();
             lastFocus = link;
-            frame.src = link.getAttribute("href");
-            frame.alt = link.querySelector("img").alt;
+            show(i);
             lightbox.classList.add("is-open");
             document.body.style.overflow = "hidden";
             lightbox.querySelector(".lightbox__close").focus();
          });
       });
 
+      // The arrows sit inside the backdrop, so they have to be handled before
+      // the "clicked the backdrop, so close" fallthrough below.
       lightbox.addEventListener("click", function (e) {
+         if (e.target.closest(".lightbox__nav--prev")) { show(current - 1); return; }
+         if (e.target.closest(".lightbox__nav--next")) { show(current + 1); return; }
          if (e.target === lightbox || e.target.closest(".lightbox__close")) { closeBox(); }
       });
+
       document.addEventListener("keydown", function (e) {
-         if (e.key === "Escape" && lightbox.classList.contains("is-open")) { closeBox(); }
+         if (!lightbox.classList.contains("is-open")) { return; }
+         if (e.key === "Escape")     { closeBox(); }
+         if (e.key === "ArrowLeft")  { show(current - 1); }
+         if (e.key === "ArrowRight") { show(current + 1); }
       });
    }
 
