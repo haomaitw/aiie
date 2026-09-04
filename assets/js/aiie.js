@@ -94,7 +94,8 @@
 
          if (diff <= 0) {
             clock.innerHTML = '<li class="is-over"><b>AIIE 2026 has taken place — ' +
-               '<a href="assets/files/2026_USA_Result_Final.pdf">see the official award results</a>.</b></li>';
+               '<a href="assets/files/2026_USA_Result_Final.pdf" download="AIIE-2026-Award-Results.pdf">' +
+               'download the official award results</a>.</b></li>';
             clock.style.gridTemplateColumns = "1fr";
             clearInterval(timer);
             return;
